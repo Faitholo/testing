@@ -18,64 +18,65 @@ body {
     text-decoration: solid;
     color: rgb(4, 3, 51);
 }
-.nav { /*n*/
-    /* position:fixed; */
-    width: 100%;
-    z-index: 10;
-    margin-top: 0px;
-  }
+.nav {
+  overflow: hidden;
+}
+
+.nav > .home > img {
+max-height: 52px;
+padding: 0px;
+}
+.nav .home {
+  padding: 3px 3px ;
+  padding-top: 0;
+}
 
 .nav a {
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font: sans-serif 17px bold;
-    margin-bottom: 5px;
-    margin: 3px;
-    float: left;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
-  .nav > .home > img {
-    max-height: 52px;
-    padding: 0px;
-  }
-  .nav .home {
-      padding: 3px 3px ;
-      padding-top: 0;
-  }
 
-  .nav a.active {
-    background-color: rgb(14, 66, 16);
-    color: white;
-  }
-
-
-  .nav {
-    overflow:visible;
-    color: #f2f2f2;
-    text-align: center;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .nav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .nav .b:hover {
-    background-color: rgb(156, 119, 165);
-    color: black;
-    font-weight: bold;
-    font-size: 16px;
-  }
-  .nav .active:hover {
-    background-color: rgb(14, 66, 16);
-    color: white;
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
 }
+
+.nav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.nav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .nav a:not(:first-child) {display: none;}
+  .nav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav.responsive {position: relative;}
+  .nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
    /* BELOW, THE SEARCH BAR */
    .search {
     float: right;

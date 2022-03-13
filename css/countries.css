@@ -87,18 +87,6 @@
   border-bottom: solid 2px gray;
 }
 
-.topnav .nav {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 5px;
-  padding: 10px 14px;
-  text-decoration: none;
-  font-size: 17px;
-}
-.topnav .home {
-  margin: 0px;
-}
 .main-image {
   display: none;
 }
