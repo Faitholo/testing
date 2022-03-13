@@ -194,6 +194,10 @@ body {
   }
   
   /****************** END OF IMAGES FORMATTING ****************/
+
+  @media only screen and (max-width: 300px) {
+    .project-image, .project-image-wrapper, .project-image-wrapper:hover, .projects-grid {font-size: 11px}
+  }
   
 .welcome {
     font-size: larger;
