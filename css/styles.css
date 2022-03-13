@@ -125,7 +125,7 @@ body {
     color: lightyellow;
   }
   
-  @media (max-width: 650px) {
+  @media (max-width: 200px) {
     .projects-grid {
       grid-template-columns: 100%;
     }
